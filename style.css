@@ -1,0 +1,111 @@
+  @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+  .line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 100%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 20em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+.fadeIn{animation: fadeIn 5s;}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(94 3 79);
+    background: black;
+}
+nav{
+    border-bottom:  2px solid white;
+    border-radius: 4px;
+}
+nav ul{
+    font-family: 'Kanit', sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    list-style: none;
+    display: flex;
+    justify-content: end;
+}
+
+nav ul li{
+    margin: 20px 40px;
+}
+nav ul li a{
+    text-decoration: none;
+}
+nav img{
+    height: 50px;
+    position: absolute;
+    left: 40px;
+    margin: 10px 10px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin:20px 50px;
+    
+}
+.photo{
+    min-width: 50vw;
+}
+.photo img{
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    border:5px solid;
+    border-color:rgb(94 3 79);
+}
+
+.greet{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+}
+.greet p{
+    color: white;
+}
+.description span{
+    color: white;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.projects{
+    padding: 50px 100px;
+    height: 300px;
+    display: flex;
+    justify-content:space-between;
+}
+
+.card{
+    height: 22rem;
+    width: 22rem;
+    border: 2px solid whitesmoke;
+    border-radius: 15%;
+}
